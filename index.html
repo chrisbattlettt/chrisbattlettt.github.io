@@ -1,7 +1,115 @@
 <!DOCTYPE html>
 <html>
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<header>
+	<img class="logo" src="src/img/logo.png" alt="Chris Battle logo">
+	<div class="header-text">
+		<h1>Chris Battle</h1>  
+		<nav>
+		<a href="#Profil">Profil</a>
+		<a href="#Studio">Studio</a>
+		<a href="#Arbeiten">Arbeiten</a>
+		<a href="#Kontakt">Kontakt</a>
+		</nav>
+	</div>
+</header>
+<div class="slider">
+  <div class="slider-container">
+    <img class="slider-image" src="src/img/face.png" alt="face tattoo flash">
+    <img class="slider-image" src="src/img/rose.png" alt="rose tattoo flash">
+    <img class="slider-image" src="src/img/dagger.png" alt="dagger tattoo flash">
+  </div>
+</div>
+<main>
+
+
+<script src="src/js/slider.js"></script>
+
+<section id="Profil"><h1>Mein Profil</h1>
+    <img class="portrait" src="src/img/portrait.png" alt="portrait of chris">
+	<p>Tätowierer in Ausbildung seit 2019
+Traditional, Oldschool und Kleinzeug
+Egal ob farbig oder nur schwarz, ob klassische Traditional Designs oder eure eigenen Ideen, ich freue mich auf alle eure Anfragen.Gerne auch kleine Motive, oder hol dir eins von meinen Wannados!</p>
+</section>
+
+<section id="Studio"><h1>Das Studio</h1>
+    <img class="portrait" src="src/img/studio.png" alt="portrait of chris">
+<address>
+<p>Rabenschwarz Tattoo</p>
+<p>Albertus-Magnus-Straße 2</p>
+<p>90547 Stein</p>
+</address>
+</section>
+
+<section id="Arbeiten"><h1>Meine Arbeiten</h1>
+<p>Einbettungscode Platzhalter</p>
+</section>
+
+<section id="Kontakt"><h1>Kontakt</h1>
+<form id="tattooForm" action="#" method="post">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">E-Mail</label>
+    <input type="email" id="email" name="email" required>
+    
+   <label for="size">Größe</label>
+    <input type="number" id="size" name="size" required step="0.01">
+    <span>cm</span>
+    
+    <label for="budget">Budget</label>
+    <input type="number" id="budget" name="budget" required step="0.01">
+    <span>€</span>
+    
+    
+    <label for="bodypart">Körperstelle</label>
+    <input type="text" id="bodypart" name="bodypart" required>
+    
+    <label for="motive">Motiv</label>
+    <textarea id="motive" name="motif" required></textarea>
+    
+    <button type="submit"><img src="src/img/bottle.png" alt="Send icon" width="20" height="20"> SENDE MIR DEINEN TATTOO-WUNSCH</button>
+</form>
+<div id="message"></div>
+<script src="src/js/mail.js"></script>
+</section>
+
+<footer>
+    <div class="footer-left">
+
+	<a href="https://www.instagram.com/chris.battle.ttt" target="_blank">
+		<img class="insta" src="src/img/insta.png" alt="flink to insta profile">
+	</a>
+	<address>
+		<p>Rabenschwarz Tattoo</p>
+		<p>Albertus-Magnus-Straße 2</p>
+		<p>90547 Stein</p>
+	</address>
+	    </div>
+    <div class="footer-right">
+
+	<a href="datenschutzerklaerung.html">Datenschutzerklärung</a>
+	    </div>
+</main>
+</footer>
+
+<!--    <div id="cookie-banner">
+        <p>Diese Webseite verwendet Cookies, um die Benutzererfahrung zu verbessern. Durch die Nutzung dieser Webseite stimmst du unserer Verwendung von Cookies zu.</p>
+        <button onclick="acceptCookies()">Cookies akzeptieren</button>
+    </div> -->
+<script>
+        function acceptCookies() {
+            // Hier könntest du Cookies setzen oder andere Aktionen durchführen
+            // Zum Beispiel: localStorage.setItem('cookiesAccepted', true);
+            document.getElementById('cookie-banner').style.display = 'none';
+        }
+
+        // Hier könntest du prüfen, ob der Benutzer bereits Cookies akzeptiert hat und das Banner entsprechend ausblenden
+        // Zum Beispiel: if (localStorage.getItem('cookiesAccepted')) { document.getElementById('cookie-banner').style.display = 'none'; }
+    </script>
 </body>
 </html>

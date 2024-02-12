@@ -1,0 +1,222 @@
+@font-face {
+  font-family: 'Boeticher Roman';
+  src: url('src/font/Boeticher-Roman.otf') format('opentype'); /* Adjust the path accordingly */
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('src/font/Montserrat-Regular.ttf') format('truetype'); /* Passe den Dateinamen entsprechend an */
+}
+body{
+	margin:0;
+	    padding-top: 162px; /* Platz für den Header schaffen */
+		background-color:#491064;
+
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Boeticher Roman', sans-serif;
+  margin:0;
+  font-weight:normal;
+}
+
+h1{
+	font-size:64px;
+}
+header > h1{
+	line-height:1;
+}
+
+section > h1{
+	color:#D48F2F;
+	text-shadow: 0 4px 4px rgba(212, 143, 47, 0.35);
+	
+
+}
+.logo {
+    padding-top: 27px;
+}
+
+section, footer{
+	background-color:#1C1415DA;
+	color: #D1D3D3;
+    padding:22px;
+
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    display: flex;
+}
+
+.footer-left address {
+    margin-left: 10px; /* Adjust spacing between the link and address */
+}
+
+.footer-right {
+    /* Optional: You can add styling for the right side if needed */
+}
+
+section{
+		margin-bottom:16px;
+
+}
+
+header{
+	background-color:#D48F2F;
+	color: #1C1415;
+	margin-bottom:16px;
+padding-top: 0px;
+    padding-right: 22px;
+    padding-bottom: 22px;
+    padding-left: 22px;	 position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+	display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+
+        }
+
+       
+
+        .header-text {
+            display: flex;
+             flex-direction: column;
+            align-items: flex-start;
+        }
+
+        nav {
+            align-items: center;
+        }
+
+        nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav a:last-child {
+            margin-right: 0;
+        }
+
+/* Standard-Schriftart für den Rest des Textes */
+body, p, ul, ol, li, a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight:regular;
+}
+ .slider {
+    overflow: hidden;
+    position: relative;
+  }
+  .slider-container {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  .slider-image {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"], input[type="email"], textarea {
+        width: 250px;
+        margin-bottom: 10px;
+    }
+    textarea {
+        height: 100px;
+    }
+  footer {
+        width: 100%;
+    }	
+	
+ #cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f8f8f8;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 9999;
+        }
+
+        #cookie-banner p {
+            margin: 0;
+        }
+
+        #cookie-banner button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 15px;
+            cursor: pointer;
+        }
+		
+
+
+#tattooForm label {
+  color: #D1D3D3;
+  margin-bottom: 16px;
+    display: block;
+
+}
+
+#tattooForm input[type="text"],
+#tattooForm input[type="email"],
+#tattooForm input[type="number"],
+#tattooForm textarea {
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 2px solid #D48F2F;
+  background-color: #1C1415;
+  color: #D1D3D3;
+  border-radius: 5px; /* Optional: Runde Ecken für die Eingabefelder */
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+#tattooForm button[type="submit"] {
+  background-color: #D48F2F;
+  color: #1C1415;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px; /* Optional: Runde Ecken für den Button */
+  cursor: pointer;
+    font-family: 'Boeticher Roman', sans-serif; /* Festlegen der Schriftart */
+	height:60px;
+	font-size:24px;
+
+}
+
+#tattooForm button[type="submit"]:hover {
+  background-color: #B06F25; /* Optional: Hintergrundfarbe ändern, wenn der Mauszeiger darüber schwebt */
+
+}
+		
+@media screen and (min-width: 1024px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    section {
+        flex: 0 0 calc(33.333% - 2em); /* Adjust as needed */
+        margin: 5em; /* Adjust as needed */
+		        min-height: 300px; /* Mindesthöhe der Kacheln */
+				min-width:420px;
+
+    }
+}		
+
