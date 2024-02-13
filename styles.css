@@ -215,10 +215,7 @@ color: #D1D3D3;
     display: block;
 
 }
-form {
-    display: flex;
-    flex-direction: column;
-}
+
 
 button {
     margin-top: 10px; /* Adjust this value as needed */
@@ -233,7 +230,6 @@ button {
   background-color: #1C1415;
   color: #D1D3D3;
   border-radius: 5px; /* Optional: Runde Ecken für die Eingabefelder */
-  font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -245,7 +241,7 @@ button {
   border-radius: 5px; /* Optional: Runde Ecken für den Button */
   cursor: pointer;
 	height:60px;
-	font-size:24px;
+	font-size:20px;
 		font-family: "Protest Strike", sans-serif;
 font-weight: 400;
 font-style: normal;
@@ -297,3 +293,38 @@ footer a:active {
     color: #ccc; /* Ändern Sie die Textfarbe im aktiven Zustand */
 }
 
+.message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px; /* Abgerundete Ecken mit 10px */
+    font-weight: bold;
+    max-width: 300px;
+}
+
+.success {
+    background-color: rgba(122, 201, 67, 0.9); /* Grüne Hintergrundfarbe für Erfolgsmeldung mit reduzierter Deckkraft */
+    color: #fff; /* Weiße Textfarbe */
+    border: 2px solid #7AC943; /* Knalliger Rahmen für Erfolgsmeldung */
+    padding: 15px; /* Zusätzliches Padding für Erfolgsmeldung */
+    margin: 10px; /* Zusätzlicher Abstand um die Erfolgsmeldung */
+	    border-radius: 10px; /* Abgerundete Ecken mit 10px */
+
+}
+
+.error {
+    background-color: rgba(255, 71, 71, 0.9); /* Rote Hintergrundfarbe für Fehlermeldung mit reduzierter Deckkraft */
+    color: #fff; /* Weiße Textfarbe */
+    border: 2px solid #FF4747; /* Knalliger Rahmen für Fehlermeldung */
+    padding: 15px; /* Zusätzliches Padding für Fehlermeldung */
+    margin: 10px; /* Zusätzlicher Abstand um die Fehlermeldung */
+	    border-radius: 10px; /* Abgerundete Ecken mit 10px */
+
+}
+
+.icon {
+    margin-right: 10px;
+    font-size: 20px; /* Größere Symbolgröße */
+}

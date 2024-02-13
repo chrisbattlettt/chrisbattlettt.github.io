@@ -9,14 +9,18 @@ document.getElementById('tattooForm').addEventListener('submit', function(event)
         body: formData
     })
     .then(response => {
-        if (response.ok) {
-            document.getElementById('message').innerHTML = "Anfrage erfolgreich gesendet.";
-        } else {
-            document.getElementById('message').innerHTML = "Fehler beim Senden der Anfrage.";
-        }
+    if (response.ok) {
+        document.getElementById('message').innerHTML = "<span class='icon'>&#10004;</span> Anfrage erfolgreich gesendet.";
+        document.getElementById('message').classList.add('success');
+    } else {
+        document.getElementById('message').innerHTML = "<span class='icon'>&#10008;</span> Fehler beim Senden der Anfrage.";
+        document.getElementById('message').classList.add('error');
+    }
     })
     .catch(error => {
         console.error('Error:', error);
         document.getElementById('message').innerHTML = "Fehler beim Senden der Anfrage.";
+		document.getElementById('message').classList.add('error');
+
     });
 });
