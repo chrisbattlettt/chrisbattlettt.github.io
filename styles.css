@@ -1,11 +1,17 @@
   html {
             scroll-behavior: smooth;
 			  scroll-padding-top: 143px;
+			    scroll-snap-type: y mandatory;
+
 
         }
 body{  
 margin:0;
 background-color:#491064;
+background-image: url('src/img/patternflashes.jpg');
+background-repeat: repeat;
+background-attachment: fixed;
+
 font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -17,6 +23,12 @@ font-family: "Open Sans", sans-serif;
 position:relative;
 
  }
+section > img {
+    margin-bottom: 24px;
+}
+ header > div > h1{
+	 margin-bottom:0;
+ }
 
 h1{
 	font-size:64px;
@@ -24,7 +36,20 @@ h1{
 font-weight: 400;
 font-style: normal;
 margin:0;
+margin-bottom: 32px;
 }
+
+h2,h3,h4,h5,h6 {
+	font-family: "Protest Strike", sans-serif;
+font-weight: 400;
+font-style: normal;	
+color:#D48F2F;
+	text-shadow: 0 4px 4px rgba(212, 143, 47, 0.35);
+
+
+
+}
+
 header > h1{
 	line-height:1;
 }
@@ -39,7 +64,7 @@ section > h1{
  address >p {
 	 margin:0;
  }
-section, footer{
+section{
 	background-color:#1C1415DA;
 	color: #D1D3D3;
     padding:22px;
@@ -56,6 +81,7 @@ footer {
 .footer-left {
     display: flex;
     align-items: center;
+	margin-right:22px;
 
 }
 
@@ -68,7 +94,20 @@ footer {
 }
 
 section{
-		margin-bottom:16px;
+		   display: flex;
+    flex-direction: column;
+    justify-content: center; /* Align items vertically */
+    align-items: center; /* Align items horizontally */
+    min-height: 100vh; /* Set height to 100% of viewport height */
+    margin-bottom: 64px;
+    scroll-snap-align: start;
+}
+
+#Footer{
+	height:auto;
+    min-height: unset;
+	background-color:none;
+	margin-bottom:0;
 }
 
 header{
@@ -162,8 +201,12 @@ position: sticky;
             padding: 5px 15px;
             cursor: pointer;
         }
-		
-
+	p{
+		max-width:386px;
+	}	
+	#cookie-banner > p{
+		max-width:100%;
+	}
 
 #tattooForm label {
   color: #D1D3D3;
@@ -171,7 +214,14 @@ position: sticky;
     display: block;
 
 }
+form {
+    display: flex;
+    flex-direction: column;
+}
 
+button {
+    margin-top: 10px; /* Adjust this value as needed */
+}
 #tattooForm input[type="text"],
 #tattooForm input[type="email"],
 #tattooForm input[type="number"],
@@ -206,21 +256,7 @@ font-style: normal;
 
 }
 		
-@media screen and (min-width: 1024px) {
-    main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    section {
-        flex: 0 0 calc(33.333% - 2em); /* Adjust as needed */
-        margin: 5em; /* Adjust as needed */
-		        min-height: 300px; /* Mindesthöhe der Kacheln */
-				min-width:420px;
-
-    }
-}		
+	
 
 /* Hover-Stil für Links im Header */
 header nav a:hover {
