@@ -1,25 +1,29 @@
-@font-face {
-  font-family: 'Boeticher Roman';
-  src: url('src/font/Boeticher-Roman.otf') format('opentype'); /* Adjust the path accordingly */
-}
-@font-face {
-  font-family: 'Montserrat';
-  src: url('src/font/Montserrat-Regular.ttf') format('truetype'); /* Passe den Dateinamen entsprechend an */
-}
-body{
-	margin:0;
-	    padding-top: 162px; /* Platz für den Header schaffen */
-		background-color:#491064;
+  html {
+            scroll-behavior: smooth;
+			  scroll-padding-top: 143px;
 
+        }
+body{  
+margin:0;
+background-color:#491064;
+font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Boeticher Roman', sans-serif;
-  margin:0;
-  font-weight:normal;
-}
+ main{
+	 width:100%;
+position:relative;
+
+ }
 
 h1{
 	font-size:64px;
+	font-family: "Protest Strike", sans-serif;
+font-weight: 400;
+font-style: normal;
+margin:0;
 }
 header > h1{
 	line-height:1;
@@ -31,10 +35,10 @@ section > h1{
 	
 
 }
-.logo {
-    padding-top: 27px;
-}
 
+ address >p {
+	 margin:0;
+ }
 section, footer{
 	background-color:#1C1415DA;
 	color: #D1D3D3;
@@ -45,12 +49,14 @@ section, footer{
 
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Verteilt den Inhalt gleichmäßig auf der horizontalen Achse */
     align-items: center;
 }
 
 .footer-left {
     display: flex;
+    align-items: center;
+
 }
 
 .footer-left address {
@@ -63,17 +69,14 @@ footer {
 
 section{
 		margin-bottom:16px;
-
 }
 
 header{
 	background-color:#D48F2F;
 	color: #1C1415;
 	margin-bottom:16px;
-padding-top: 0px;
-    padding-right: 22px;
-    padding-bottom: 22px;
-    padding-left: 22px;	 position: fixed;
+padding:22px;	 
+position: sticky;
     top: 0;
     left: 0;
     right: 0;
@@ -99,17 +102,16 @@ padding-top: 0px;
         nav a {
             margin-right: 20px;
             text-decoration: none;
-            color: #333;
+            color: #1C1415;
         }
 
         nav a:last-child {
             margin-right: 0;
         }
 
-/* Standard-Schriftart für den Rest des Textes */
-body, p, ul, ol, li, a {
-  font-family: 'Montserrat', sans-serif;
-  font-weight:regular;
+.footer-right > a {
+	color: #D1D3D3;
+	text-decoration: none;
 }
  .slider {
     overflow: hidden;
@@ -135,9 +137,7 @@ body, p, ul, ol, li, a {
     textarea {
         height: 100px;
     }
-  footer {
-        width: 100%;
-    }	
+
 	
  #cookie-banner {
             position: fixed;
@@ -193,9 +193,11 @@ body, p, ul, ol, li, a {
   padding: 10px 20px;
   border-radius: 5px; /* Optional: Runde Ecken für den Button */
   cursor: pointer;
-    font-family: 'Boeticher Roman', sans-serif; /* Festlegen der Schriftart */
 	height:60px;
 	font-size:24px;
+		font-family: "Protest Strike", sans-serif;
+font-weight: 400;
+font-style: normal;
 
 }
 
@@ -219,4 +221,42 @@ body, p, ul, ol, li, a {
 
     }
 }		
+
+/* Hover-Stil für Links im Header */
+header nav a:hover {
+    color: #fff; /* Ändern Sie die Textfarbe bei Hover */
+}
+
+/* Aktiver Stil für Links im Header */
+header nav a:active {
+    color: #ccc; /* Ändern Sie die Textfarbe im aktiven Zustand */
+}
+
+/* Fokusstil für Eingabefelder im Tattoo-Formular */
+#tattooForm input[type="text"]:focus,
+#tattooForm input[type="email"]:focus,
+#tattooForm input[type="number"]:focus,
+#tattooForm textarea:focus {
+    border-color: #B06F25; /* Ändern Sie die Rahmenfarbe im Fokus */
+    box-shadow: 0 0 5px rgba(176, 111, 37, 0.5); /* Optional: Fügt einen Schatten hinzu, wenn das Element den Fokus erhält */
+}
+
+/* Hover-Stil für Submit-Button im Tattoo-Formular */
+#tattooForm button[type="submit"]:hover {
+    background-color: #B06F25; /* Ändern Sie die Hintergrundfarbe beim Hover */
+}
+
+/* Aktiver Stil für Submit-Button im Tattoo-Formular */
+#tattooForm button[type="submit"]:active {
+    background-color: #8B4D1F; /* Ändern Sie die Hintergrundfarbe im aktiven Zustand */
+}
+
+footer a:hover {
+    color: #fff; /* Ändern Sie die Textfarbe bei Hover */
+}
+
+/* Aktiver Stil für Links im Footer */
+footer a:active {
+    color: #ccc; /* Ändern Sie die Textfarbe im aktiven Zustand */
+}
 
