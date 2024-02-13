@@ -183,7 +183,8 @@ position: sticky;
             bottom: 0;
             left: 0;
             width: 100%;
-            background-color: #f8f8f8;
+            background-color: #1C1415;
+color: #D1D3D3;
             padding: 10px;
             text-align: center;
             box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
@@ -195,8 +196,8 @@ position: sticky;
         }
 
         #cookie-banner button {
-            background-color: #007bff;
-            color: #fff;
+            background-color: #D48F2F;
+            color: #1C1415;
             border: none;
             padding: 5px 15px;
             cursor: pointer;
