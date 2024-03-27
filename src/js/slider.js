@@ -1,4 +1,4 @@
-const bilderOrdner = '../../slider';
+const bilderOrdner = '/src/slider';
 
         // Bilder dynamisch einfügen
         const slider = document.getElementById('imageSlider');
