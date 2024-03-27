@@ -18,6 +18,18 @@ font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-variation-settings:"wdth" 100;
 }
+
+before {
+    content: ' ';
+    display: block;
+    background-image: url('src/img/patternflashes.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh; width: 100vw;
+    top: 0; bottom: 0; left: 0; right: 0;
+    position: fixed;
+    z-index: -10; // Das hier ist sehr wichtig!
+}
  main{
 	 width:100%;
 position:relative;
@@ -49,6 +61,8 @@ color:#D48F2F;
 
 
 }
+
+
 
 header > h1{
 	line-height:1;
