@@ -353,9 +353,9 @@ footer a:active {
   
   /* Create four equal columns that sits next to each other */
   .column {
-    -ms-flex: 54%; /* IE10 */
-    flex: 54%;
-    max-width: 54%;
+    -ms-flex: 20%; /* IE10 */
+    flex: 20%;
+    max-width: 20%;
     padding: 0 4px;
   }
   
