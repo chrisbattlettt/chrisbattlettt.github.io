@@ -98,7 +98,7 @@
   const numColumns = 4;
 
   // Calculate the number of images per column
-  const imagesPerColumn = Math.ceil(imageUrls.length / numColumns);
+  const imagesPerColumn = Math.ceil((imageUrls.length-1) / numColumns);
 
   // Create columns dynamically
   for (let i = 0; i < numColumns; i++) {
