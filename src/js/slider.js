@@ -1,15 +1,27 @@
- let currentSlide = 0;
-  const slides = document.querySelectorAll('.slider-image');
-  const totalSlides = slides.length;
-  
-  function nextSlide() {
-    currentSlide = (currentSlide + 1) % totalSlides;
-    updateSlider();
-  }
-  
-  function updateSlider() {
-    const slideWidth = slides[0].offsetWidth;
-    document.querySelector('.slider-container').style.transform = `translateX(-${slideWidth * currentSlide}px)`;
-  }
-  
-  setInterval(nextSlide, 3000);
+const bilderOrdner = 'pfad/zum/deinem/bilderordner/';
+
+        // Bilder dynamisch einfügen
+        const slider = document.getElementById('imageSlider');
+        fetchImages(bilderOrdner);
+
+        async function fetchImages(ordnerPfad) {
+            try {
+                const response = await fetch(ordnerPfad);
+                const bilderNamen = await response.json();
+
+                bilderNamen.forEach((bildName) => {
+                    const img = document.createElement('img');
+                    img.src = ordnerPfad + bildName;
+                    slider.appendChild(img);
+                });
+            } catch (error) {
+                console.error('Fehler beim Laden der Bilder:', error);
+            }
+        }
+
+        // Automatisches Scrollen alle 3 Sekunden (kann angepasst werden)
+        let currentIndex = 0;
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % slider.children.length;
+            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }, 3000);
