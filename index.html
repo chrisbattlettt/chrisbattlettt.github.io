@@ -62,8 +62,11 @@
 </section>
 
 <section id="Arbeiten"><h1>Meine Arbeiten</h1>
-    <script src="src/js/slider.js"></script>
-    <div class="row" id="image-container"></div>
+    <div class="row" id="image-container">
+  <!-- JavaScript will populate this container -->
+</div>
+
+
 
 <script>
   // Example array of image URLs
@@ -73,16 +76,31 @@
     "/src/img/rose.png",
   ];
 
-  // Get the container element
+
   const container = document.getElementById("image-container");
 
-  // Loop through the image URLs and create <img> elements
-  imageUrls.forEach(url => {
-    const img = document.createElement("img");
-    img.src = url;
-    img.style.width = "100%";
-    container.appendChild(img);
-  });
+  // Define the number of columns
+  const numColumns = 4;
+
+  // Calculate the number of images per column
+  const imagesPerColumn = Math.ceil(imageUrls.length / numColumns);
+
+  // Create columns dynamically
+  for (let i = 0; i < numColumns; i++) {
+    const column = document.createElement("div");
+    column.classList.add("column"); // Add the "column" class
+    container.appendChild(column);
+
+    // Populate each column with images
+    for (let j = i * imagesPerColumn; j < (i + 1) * imagesPerColumn; j++) {
+      if (j < imageUrls.length) {
+        const img = document.createElement("img");
+        img.src = imageUrls[j];
+        img.style.width = "100%";
+        column.appendChild(img);
+      }
+    }
+  }
 </script>
 
 </section>
