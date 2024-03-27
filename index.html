@@ -63,11 +63,27 @@
 
 <section id="Arbeiten"><h1>Meine Arbeiten</h1>
     <script src="src/js/slider.js"></script>
-<div class="slider-container">
-    <div class="slider" id="imageSlider">
-            <!-- Hier werden die Bilder dynamisch eingefügt -->
-        </div>    
-        </div>
+    <div class="row" id="image-container"></div>
+
+<script>
+  // Example array of image URLs
+  const imageUrls = [
+    "/src/img/bottle.png",
+    "/src/img/dagger.png",
+  ];
+
+  // Get the container element
+  const container = document.getElementById("image-container");
+
+  // Loop through the image URLs and create <img> elements
+  imageUrls.forEach(url => {
+    const img = document.createElement("img");
+    img.src = url;
+    img.style.width = "100%";
+    container.appendChild(img);
+  });
+</script>
+
 </section>
 
 <section id="Kontakt"><h1>Kontakt</h1>
