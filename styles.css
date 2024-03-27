@@ -28,7 +28,7 @@ before {
     height: 100vh; width: 100vw;
     top: 0; bottom: 0; left: 0; right: 0;
     position: fixed;
-    z-index: -10; // Das hier ist sehr wichtig!
+    z-index: -10; 
 }
  main{
 	 width:100%;
@@ -101,10 +101,6 @@ footer {
 
 .footer-left address {
     margin-left: 10px; /* Adjust spacing between the link and address */
-}
-
-.footer-right {
-    /* Optional: You can add styling for the right side if needed */
 }
 
 section{
