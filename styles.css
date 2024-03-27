@@ -349,13 +349,14 @@ footer a:active {
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
     padding: 0 4px;
+    justify-content: center;
   }
   
   /* Create four equal columns that sits next to each other */
   .column {
-    -ms-flex: 20%; /* IE10 */
-    flex: 20%;
-    max-width: 20%;
+    -ms-flex: 19%; /* IE10 */
+    flex: 19%;
+    max-width: 19%;
     padding: 0 4px;
   }
   
