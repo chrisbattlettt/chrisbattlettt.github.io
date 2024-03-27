@@ -8,7 +8,7 @@ const bilderOrdner = 'slider';
             try {
                 const response = await fetch(ordnerPfad);
                 const bilderNamen = await response.json();
-
+        
                 bilderNamen.forEach((bildName) => {
                     const img = document.createElement('img');
                     img.src = ordnerPfad + bildName;
