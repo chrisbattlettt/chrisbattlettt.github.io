@@ -36,7 +36,7 @@ position:relative;
 
  }
 section > img {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
  header > div > h1{
 	 margin-bottom:0;
@@ -48,7 +48,7 @@ h1{
 font-weight: 400;
 font-style: normal;
 margin:0;
-margin-bottom: 32px;
+margin-bottom: 16px;
 }
 
 h2,h3,h4,h5,h6 {
@@ -126,8 +126,8 @@ section{
 header{
 	background-color:#D48F2F;
 	color: #1C1415;
-	margin-bottom:16px;
-padding:22px;	 
+	margin-bottom:40px;
+padding:11px;	 
 position: sticky;
     top: 0;
     left: 0;
@@ -369,17 +369,17 @@ footer a:active {
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
     .column {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
+      -ms-flex: 12%;
+      flex: 12%;
+      max-width: 12%;
     }
   }
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .column {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
+      -ms-flex: 17%;
+      flex: 17;
+      max-width: 17%;
     }
   }
