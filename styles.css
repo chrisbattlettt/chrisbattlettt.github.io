@@ -43,7 +43,7 @@ section > img {
  }
 
 h1{
-	font-size:64px;
+	font-size:38px;
 	font-family: "Protest Strike", sans-serif;
 font-weight: 400;
 font-style: normal;
@@ -62,7 +62,10 @@ color:#D48F2F;
 
 }
 
-
+.logo {
+    min-width: 5%;
+    max-width: 17%;
+  }
 
 header > h1{
 	line-height:1;
